@@ -218,11 +218,11 @@ module Stealth
             }
 
             if sharable.present?
-              template["message"]["payload"]["sharable"] = sharable
+              template["message"]["attachment"]["payload"]["sharable"] = sharable
             end
 
             if aspect_ratio.present?
-              template["message"]["payload"]["image_aspect_ratio"] = aspect_ratio
+              template["message"]["attachment"]["payload"]["image_aspect_ratio"] = aspect_ratio
             end
 
             template
